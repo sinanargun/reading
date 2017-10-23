@@ -1,5 +1,6 @@
 # Reading
-Readlist For My Own Craftman World
+Readlist For My Own Craftman World! You know it will take time to get better. Don't quit practising and always strive with 
+comfort-zone. You are like a NBA Player. You have to practice every single day. Focus relentlessly more conceptual things rather than techonology.  
 
 > The Pragmatic Programmer
 
