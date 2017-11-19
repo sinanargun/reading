@@ -28,7 +28,7 @@ Some Notes:
   
   Classes vs. Objects
     A key concept in object-oriented design in the differentiation between objects and classes. An object is any specific entity that exists in your program at run time. A class is the static thing you look at in the program listing. An object is the dynamic thing with specific values and attributes you see when you run the program. For example, you could declare a 
-class Person that had attributes of name,age,gender, and so on. At run time you would have the objects nancy,hank,diane,tony and so on-that is, specific instances of the class. If you're familiar with database terms, it's the same as the
+class Person that had attributes of name,age,gender, and so on. At run time you would have the objects nancy,hank,diane,tony and so on-that is, specific instances of the class. If you\'re familiar with database terms, it's the same as the
 distinction between schema and instance. You could think of the class the cookie cutter and the object as the cookie.
     
   When I am working on a problem, I never think about beauty. I think only how to solve the problem. But I have finished if the solution is not beautiful, I know it is wrong.  R.Buckminster Fuller.
@@ -40,13 +40,13 @@ abstraction of a particular formation of brass, nickel, iron or steel.
   Encapsulation picks up where abstraction leaves off. Abstraction says, You are allowed to look at an object
 at a high level of detail. Encapsulation says, Furthermore, you aren't allowed to look at an object at any other level of detail.
   
-  Continuing with the housing-materials analogy: encapsulation is a way of saying that you can look at the outside of the house but you can't get close enough to make out the door's details. You are allowed to know that there's a door, and you're   allowed to know whether the door is open or closed, but you're not allowed to know whether the door is made of wood, fiberglass,stell, or some other material, and you're certainly not allowed to look at each individual wood fiber.
+  Continuing with the housing-materials analogy: encapsulation is a way of saying that you can look at the outside of the house but you can't get close enough to make out the door's details. You are allowed to know that there's a door, and you\'re   allowed to know whether the door is open or closed, but you\'re not allowed to know whether the door is made of wood, fiberglass,stell, or some other material, and you're certainly not allowed to look at each individual wood fiber.
   
-  In designing a software system, you'll often find objects that are much like other objects, except for a few differences. 
+  In designing a software system, you\'ll often find objects that are much like other objects, except for a few differences. 
   In an accounting system, for instance, you might have both full-time and part-time employees.
   Most of data associated with both kinds of employees is the same, but some is different. 
   In object oriented programming, you can define a general type of employee and then define full-time employees as general employees, except for a few differences, and part-time employees also as general employees, except for a few differences.
-  When an operation on an employee doesn't depend on the type of employee, the operation is handled as if the employee were just a general employee.
+  When an operation on an employee doesn\'t depend on the type of employee, the operation is handled as if the employee were just a general employee.
   When the operation depends on whether the employee is full-time or part-time, the operation is handled differently.
   
   Defining similarities and differences among such objects is called inheritance because the specific part-time 
@@ -64,5 +64,23 @@ and full-time employees inherit characteristics from the general-employee type.
  * Make central points of control
  * Facilitate reusable code
  
+ 
+ Abstraction
+  * Does the class have a central purpose?
+  * Is the class well named, and does its name describe its central purpose?
+  * Does the class's interface present a consistent abstraction?
+  * Has unrelated information been moved out of the class?
+  * Have you thought about subdividing the class into component classes, and have you subdivided it as much as you can?
+ Encapsulation
+  * Does the class minimize accessibility to its members?
+  * Does the class avoid exposing member data?
+  * Does the class hide its implementation details from other classes as much as the programming language permits?
+  * Is the class independent of other classes? Is it loosely coupled?
+ Inheritance
+  * Is inheritance used only to model 'is a' relationships-that is, do derived classed adhere to the Liskov Substitution Principle? 
+  * Does the class documentation describe the inheritance strategy?
+  * Do derived classes avoid 'overriding' non-overridable routines?
+  * Are all data members in the base class private rather than protected?
+
 ```
 
